@@ -38,16 +38,38 @@ These are common dependencies that makes architecture flow easier.
 * Using modular architecture to architect the app per feature to be easier and more readable and isolate the feature from each other
 
 <p align="center">
-  <img src="https://camo.githubusercontent.com/a5485a38e6af7aa1055807a47e1833fc9a35eb7b997940b26936dcffae760623/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f3737322f302a73664344456235373157442d374566502e6a7067" />
+  <img src="https://github.com/MoonTechnolabs/Flutter-Code-Standard-Demo/blob/main/image/Project%20Structure.png" />
 </p>
 
 
-## What about Controller
-The GetxController class takes care of all your logic and makes your fields observable.
+## What is Controller?
+* The GetxController class takes care of all your logic and makes your fields observable.
+<p align="center">
+  <img src="https://github.com/MoonTechnolabs/Flutter-Code-Standard-Demo/blob/main/image/Controller.png" />
+</p>
 
-## Waht about Binding
-Bindings can be used to initialize your controllers, repositories, APIs, and whatever else you need without having to call them directly from the view page.
 
+## What is Binding?
+* Bindings can be used to initialize your controllers, repositories, APIs, and whatever else you need without having to call them directly from the view page.
+<p align="center">
+  <img src="https://github.com/MoonTechnolabs/Flutter-Code-Standard-Demo/blob/main/image/Binding.png" />
+</p>
 
+## What is GetView?
+* GetView uses Stateless widget internally so here is we can use Stateless or GetView. But benefit of using GetView is quickly access your Controller without having to call Get.find<AwesomeController>() yourself.
+  <p align="center">
+  <img src="https://github.com/MoonTechnolabs/Flutter-Code-Standard-Demo/blob/main/image/GetView.png" />
+</p>
 
+## What is AppRoutes?
+* In GetX before navigating from one screen to another we require routes. So let's create routes.
+  <p align="center">
+  <img src="https://github.com/MoonTechnolabs/Flutter-Code-Standard-Demo/blob/main/image/AppRoutes.png" />
+</p>
+
+## Whta is NetworkInterceptor?
+* Interceptors are a powerful mechanism that can monitor, rewrite, and retry calls. Here’s a simple interceptor that logs the outgoing request and the incoming response.
+  <p align="center">
+  <img src="https://github.com/MoonTechnolabs/Flutter-Code-Standard-Demo/blob/main/image/NetworkInterceptor.png" />
+</p>
 
